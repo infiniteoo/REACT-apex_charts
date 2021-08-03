@@ -3,7 +3,26 @@ import Chart from "react-apexcharts";
 
 const PopChart = () => {
   const [state, setstate] = useState({
-    options: {},
+    options: {
+      chart: {
+        background: "#f4f4f4",
+        foreColor: "#333",
+      },
+      xaxis: {
+        categories: [
+          "New York",
+          "Los Angeles",
+          "Chicago",
+          "Houston",
+          "Philadelphia",
+          "Phoenix",
+          "San Antonio",
+          "San Diego",
+          "Dallas",
+          "San Jose",
+        ],
+      },
+    },
     series: [
       {
         name: "Population",
