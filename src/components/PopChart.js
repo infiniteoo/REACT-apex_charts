@@ -22,6 +22,26 @@ const PopChart = () => {
           "San Jose",
         ],
       },
+      plotOptions: {
+        bar: {
+          horizontal: false,
+        },
+      },
+      fill: {
+        colors: ["#f44366"],
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      title: {
+        text: "Largest US Cities by Population",
+        align: "center",
+        margin: 20,
+        offsetY: 20,
+        style: {
+          fontSize: "25px",
+        },
+      },
     },
     series: [
       {
